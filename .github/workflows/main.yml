@@ -63,7 +63,7 @@ jobs:
   deploy_lambda_source:
     name: deploy lambda from source
     runs-on: ubuntu-latest
-    needs: build-and-push-ecr-image
+    needs: integration
     steps:
       - name: checkout source code
         uses: actions/checkout@v3
